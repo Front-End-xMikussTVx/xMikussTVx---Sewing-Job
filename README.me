@@ -1,0 +1,89 @@
+Skrypt zrobiony na podstawie skryptu jakiegoś ziutka co sprzedaje to po 20PLN i myślisz że coś zarobi na chleb.
+
+Developer - xMikussTVx#6666
+Pomocnik Mentalny - ayay.Matiś#8054
+
+&1.0 - Dodaj to do skryptu od ox_inventory ( ox_inventory/data/shops.lua )
+
+----------------------
+
+	Szwalnia = {
+		name = 'Szwalnia',
+		groups = {
+			['szwalnia'] = 0
+		},
+	    inventory = {
+			{ name = 'szwalnia_kamza_50', price = 1},
+			{ name = 'szwalnia_kamza_100', price = 1},
+		}, locations = {
+			vec3(708.76, -958.8, 30.4),
+		}, targets = {
+			{ loc = vec3(708.76, -958.8, 30.4), length = 1.0, width = 0.8, heading = 0.0, minZ = 27.2, maxZ = 31.2, distance = 2.0 }
+		}
+	},
+
+----------------------
+
+&2.0 - Dodaj to do skryptu od ox_inventory ( ox_inventory/data/items.lua )
+
+----------------------
+
+	['szwalnia_paczka_spadochron'] = {
+		label = 'Paczka Materiałów na Spadochron',
+		weight = 5000,
+		stack = false,
+	},
+
+	['szwalnia_paczka_kamza'] = {
+		label = 'Paczka Materiałów na Kamizelke',
+		weight = 5000,
+		stack = false,
+	},
+
+	['szwalnia_kamza_50'] = {
+		label = 'Kamizelka kuloodporna',
+		weight = 5000,
+		stack = false,
+		client = {
+			event = "mikuss_uzyciekamzy50"
+		}
+	},
+
+	['szwalnia_kamza_100'] = {
+		label = 'Powiększona Kamizelka kuloodporna',
+		weight = 6500,
+		stack = false,
+		client = {
+			event = "mikuss_uzyciekamzy100"
+		}
+	},
+
+	['szwalnia_spadochron_lol'] = {
+		label = 'Spadochron',
+		weight = 6500,
+		stack = false,
+	},
+
+----------------------
+
+&3.0 - Dodaj Ikonki z Folderu ( mikuss-sewing/img do ox_inventory/web/build/images )
+
+----------------------
+
+Pozdrawiam i naprawdę nie sprzedawajcie takiego czegoś co można napisać w zaledwie 30 min przy dobrej kawce ;
+( Pov: Masz podobone na swojej korporacji :tf: :kekw: )
+
+
+██╗░░██╗███╗░░░███╗██╗██╗░░██╗██╗░░░██╗░██████╗░██████╗████████╗██╗░░░██╗██╗░░██╗
+╚██╗██╔╝████╗░████║██║██║░██╔╝██║░░░██║██╔════╝██╔════╝╚══██╔══╝██║░░░██║╚██╗██╔╝
+░╚███╔╝░██╔████╔██║██║█████═╝░██║░░░██║╚█████╗░╚█████╗░░░░██║░░░╚██╗░██╔╝░╚███╔╝░
+░██╔██╗░██║╚██╔╝██║██║██╔═██╗░██║░░░██║░╚═══██╗░╚═══██╗░░░██║░░░░╚████╔╝░░██╔██╗░
+██╔╝╚██╗██║░╚═╝░██║██║██║░╚██╗╚██████╔╝██████╔╝██████╔╝░░░██║░░░░░╚██╔╝░░██╔╝╚██╗
+╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝╚═╝░░╚═╝░╚═════╝░╚═════╝░╚═════╝░░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝
+
+██████╗░███████╗██╗░░░██╗███████╗██╗░░░░░░█████╗░██████╗░███████╗██████╗░  ████████╗███████╗  ████████╗███████╗
+██╔══██╗██╔════╝██║░░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗██╔════╝██╔══██╗  ╚══██╔══╝██╔════╝  ╚══██╔══╝██╔════╝
+██║░░██║█████╗░░╚██╗░██╔╝█████╗░░██║░░░░░██║░░██║██████╔╝█████╗░░██████╔╝  ░░░██║░░░█████╗░░  ░░░██║░░░█████╗░░
+██║░░██║██╔══╝░░░╚████╔╝░██╔══╝░░██║░░░░░██║░░██║██╔═══╝░██╔══╝░░██╔══██╗  ░░░██║░░░██╔══╝░░  ░░░██║░░░██╔══╝░░
+██████╔╝███████╗░░╚██╔╝░░███████╗███████╗╚█████╔╝██║░░░░░███████╗██║░░██║  ░░░██║░░░██║░░░░░  ░░░██║░░░██║░░░░░
+╚═════╝░╚══════╝░░░╚═╝░░░╚══════╝╚══════╝░╚════╝░╚═╝░░░░░╚══════╝╚═╝░░╚═╝  ░░░╚═╝░░░╚═╝░░░░░  ░░░╚═╝░░░╚═╝░░░░░
